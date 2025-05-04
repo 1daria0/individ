@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Manager</title>
+</head>
+<body>
+  <div class="container">
+    <h1>📚 Менеджер книг</h1>
+    <form id="book-form">
+      <input type="text" id="title" placeholder="Название книги" required>
+      <input type="text" id="author" placeholder="Автор" required>
+      <input type="number" id="year" placeholder="Год" required>
+      <input type="text" id="genre" placeholder="Жанр" required>
+      <button type="submit">Добавить книгу</button>
+    </form>
+
+    <div class="filters">
+      <input type="text" id="search" placeholder="Поиск по названию или автору">
+      <select id="sort">
+        <option value="">Сортировка</option>
+        <option value="title">По названию</option>
+        <option value="year">По году</option>
+      </select>
+    </div>
+
+    <div id="book-list"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
